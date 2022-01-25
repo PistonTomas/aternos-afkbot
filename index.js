@@ -14,9 +14,9 @@ var host = data["ip"];
 var port = data["port"];
 var username = data["name"]
 var bot = mineflayer.createBot({
-  host: host,
-  port: port,
-  username: username
+  host: 51.15.106.89,
+  port: 12682,
+  username: PistonTomas
 });
 function getRandomArbitrary(min, max) {
        return Math.random() * (max - min) + min;
