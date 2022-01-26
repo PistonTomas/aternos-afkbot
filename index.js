@@ -16,7 +16,7 @@ var username = data["name"]
 var bot = mineflayer.createBot({
   host: 51.15.106.89,
   port: 12682,
-  username: PistonTomas
+  username: TomasBot
 });
 function getRandomArbitrary(min, max) {
        return Math.random() * (max - min) + min;
@@ -25,6 +25,7 @@ function getRandomArbitrary(min, max) {
 bot.on('login',function(){
 	console.log("Logged In")
 });
+console.log(bot.players);
 bot.on('time', function() {
     if (connected <1) {
         return;
